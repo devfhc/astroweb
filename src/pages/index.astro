@@ -1,0 +1,243 @@
+---
+import PrimaryLayout from "../layouts/PrimaryLayout.astro";
+import Banner from "../components/Banner.astro";
+import Footer from "../components/Footer.astro";
+import BookConsultation from "../components/BookConsultation.astro";
+
+const metaTitle = "Home Health Care - Chicago, IL - Friendly Home Care";
+const metaDescription="Friendly Home Care in Chicago, IL, offers various in-home care services for clients who need assistance. Call for a consultation at 773-545-7776.";
+const metaKeywords ="Personalized Home Care, In-home Care, Friendly Home Care in Chicago, IL, European Care Service, European Language, Companion for the Elderly, Assistance for the Seniors, Personal Care, Live-ins Caregivers, Overnight Care, Personal &amp; Trusted In-Home Care Service";
+const canonicalUrl = "https://www.chicagoeuropeancaregivers.com/";
+const ldJson =`
+  <script type="application/ld+json">
+      {
+        "@context": {
+          "@vocab": "http://schema.org/"
+        },
+        "@type": "LocalBusiness",
+        "name": "Friendly Home Care",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3427 N Milwaukee Ave",
+          "addressLocality": "Chicago",
+          "addressRegion": "IL",
+          "postalCode": "60641",
+          "addressCountry": "USA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "41.94374",
+          "longitude": "-87.73102"
+        },
+        "url": "https://www.chicagoeuropeancaregivers.com",
+        "telephone": "773-545-7776",
+        "email": "friendly@chicagoeuropeancaregivers.com",
+        "sameAs": [
+          "https://facebook.com/people/Friendly-Home-Care/61550585432696/"
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "09:00",
+            "closes": "12:00"
+          }
+        ],
+        "@id": "https://www.chicagoeuropeancaregivers.com"
+      }</script>`;
+---
+
+<PrimaryLayout metaTitle={metaTitle} metaDescription={metaDescription} metaKeywords={metaKeywords} canonicalUrl={canonicalUrl} ldJson={ldJson}>
+	<Banner />
+	<!-- SERVICES -->
+	<div class="container-fluid bg-white">
+		<div class="container py-6">
+			<section class="row">
+				<div class="col-12">
+					<h2
+						class="h1 text-center fw-bold mb-5 ff-slab uppercase text-primary"
+					>
+						Our Services
+					</h2>
+				</div>
+				<div class="col-12 col-lg-4">
+					<a
+						class="card-link"
+						title="Learn more about In-Home Care Services"
+						href="#"
+					>
+						<div class="position-relative">
+							<img
+								src="./images/friendly-home-care-03.jpg"
+								class="w-100 mb-4"
+								alt="Caregiver talking to elderly couple"
+							/>
+							<div
+								class="position-absolute top-50 start-50 translate-middle hover-show"
+							>
+								<i class="fas fa-eye fa-3x text-white"></i>
+							</div>
+						</div>
+						<h3 class="h4 mb-3">In-Home Care Services</h3>
+						<p class="mb-0">
+							Our in-home care services offer compassionate support for those
+							who prefer staying at home. From companionship to personal care,
+							we tailor our assistance to your needs, fostering independence
+							and enhancing quality of life in a familiar environment.
+						</p>
+					</a>
+				</div>
+				<div class="col-12 col-lg-4">
+					<a
+						class="card-link"
+						title="Learn more about Companionship Care"
+						href="#"
+					>
+						<div class="position-relative">
+							<img
+								src="./images/friendly-home-care-04.jpg"
+								class="w-100 mb-4"
+								alt="Caregiver taking care of elderly women"
+							/>
+							<div
+								class="position-absolute top-50 start-50 translate-middle hover-show"
+							>
+								<i class="fas fa-eye fa-3x text-white"></i>
+							</div>
+						</div>
+						<h3 class="h4 mb-3">Companionship Care</h3>
+						<p class="mb-0">
+							Our companionship caregivers provide meaningful emotional
+							support and companionship. Through engaging conversation, games,
+							and laughter, they combat loneliness and enhance well-being,
+							fostering connections that brighten your day.
+						</p>
+					</a>
+				</div>
+				<div class="col-12 col-lg-4">
+					<a
+						class="card-link"
+						title="Learn more about Personal Care"
+						href="#"
+					>
+						<div class="position-relative">
+							<img
+								src="./images/friendly-home-care-05.jpg"
+								class="w-100 mb-4"
+								alt="Eldery women happy to see her caregiver"
+							/>
+							<div
+								class="position-absolute top-50 start-50 translate-middle hover-show"
+							>
+								<i class="fas fa-eye fa-3x text-white"></i>
+							</div>
+						</div>
+						<h3 class="h4 mb-3">Personal Care</h3>
+						<p class="mb-0">
+							Our personal care services ensure comfort, safety, and dignity
+							in daily living. From bathing and grooming to medication
+							reminders and mobility support, our caregivers assist with
+							sensitivity and respect, preserving independence and routines at
+							home.
+						</p>
+					</a>
+				</div>
+				<div class="col-12 text-center pt-4">
+					<a href="#" class="btn btn-secondary">View All Services</a>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- WHY US -->
+	<div class="container-fluid bg-light2">
+		<div class="container py-6">
+			<section class="row mb-6">
+				<div class="col-12 col-lg-8 offset-lg-2 text-center">
+					<h2 class="h1 fw-bold mb-5 ff-slab uppercase text-primary">
+						Why Choose Friendly Home Care?
+					</h2>
+					<p>
+						For over 30 years, Friendly Home Care has provided reliable and
+						caring service. Our caregivers are carefully chosen and undergo
+						background checks to make sure they're trustworthy and dedicated
+						to your happiness. We offer flexible scheduling to fit your needs
+						and speak many languages, including <strong>English</strong>,
+						<strong>Polish</strong>, <strong>Ukrainian</strong>,
+						<strong>Russian</strong>, <strong>Italian</strong>, and
+						<strong>Hebrew</strong>. Also, we are licensed by
+						<strong>IDPH</strong> and <strong>IDL</strong>.
+					</p>
+				</div>
+			</section>
+			<section class="row align-items-center mb-5">
+				<div class="col-12 col-lg-6">
+					<img
+						src="./images/friendly-home-care-06.jpg"
+						class="w-100 br-default mb-4 mb-lg-3 img-p-cover"
+						alt="Happy elderly man giving thumbs up"
+					/>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="ps-0 ps-lg-5">
+						<h2 class="mb-3 ff-slab">
+							Trusted In-Home Care Services for Families in Chicago, IL, and
+							Surrounding Suburbs
+						</h2>
+						<p>
+							In the heart of Chicago and its surrounding suburbs, many
+							families trust our comprehensive in-home care services.
+							Alongside companionship, we offer personalized care tailored to
+							individual needs. Our caregivers provide emotional support,
+							ensuring clients never feel alone or isolated. Our
+							European-trained staff delivers compassionate care, fostering
+							comfort and well-being in every interaction.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="row align-items-center">
+				<div class="col-12 col-lg-6">
+					<img
+						src="./images/friendly-home-care-02.jpg"
+						class="w-100 br-default mb-4 mb-lg-3 img-p-cover"
+						alt="Caregiver holding patient's hands"
+					/>
+				</div>
+				<div class="col-12 col-lg-6 order-lg-first">
+					<div class="pe-0 pe-lg-5">
+						<h2 class="mb-3 ff-slab">
+							Comprehensive Home Care Services Tailored to You
+						</h2>
+						<p>
+							Whether it's assistance with daily activities or specialized
+							care, our dedicated team is here to support you or your loved
+							one in the comfort of home. Don't let illness or age hinder
+							daily life. Friendly Home Care empowers independence and joy,
+							offering temporary, hourly, and live-in care options. Our
+							certified caregivers excel in aiding with conditions like
+							Dementia, Parkinson's, M.S., Stroke, Cancer, and more. Available
+							24/7, even on holidays.
+						</p>
+					</div>
+				</div>
+			</section>
+			<div class="text-center pt-5">
+				<a href="#" class="btn btn-secondary">More About Us</a>
+			</div>
+		</div>
+	</div>
+	<BookConsultation />
+	<Footer />
+</PrimaryLayout>
