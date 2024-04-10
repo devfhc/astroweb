@@ -1,6 +1,7 @@
 ---
 import Head from "../components/Head.astro";
 import Header from "../components/Header.astro";
+import PreHeader from "../components/PreHeader.astro";
 
 const {metaTitle, metaDescription, metaKeywords, canonicalUrl, ldJson} = Astro.props;
 ---
@@ -8,6 +9,7 @@ const {metaTitle, metaDescription, metaKeywords, canonicalUrl, ldJson} = Astro.p
 <html lang="en">
   <Head title={metaTitle} description={metaDescription} keywords={metaKeywords} canonicalURL={canonicalUrl} ldJson={ldJson} />
   <body>
+    <PreHeader />
     <Header />
     <slot />
     <link

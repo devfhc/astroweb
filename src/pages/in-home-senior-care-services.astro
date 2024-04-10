@@ -1,0 +1,103 @@
+---
+import PrimaryLayout from "../layouts/PrimaryLayout.astro";
+import GeneralInquiries from "../components/GeneralInquiries.astro";
+import Footer from "../components/Footer.astro";
+
+const metaTitle = "In-Home Care Service - Friendly Home Care";
+const metaDescription="For personal home care services in Chicago, IL, call Friendly Home Care at 773-545-7776. Our trained caregivers are there to help you.";
+const metaKeywords ="In-home care services, Home health care assistance, Senior care at home, Elderly care services, Alzheimer's care at home, Dementia care services, Rehabilitation services at home, Personalized home care, Professional caregivers, Home care for seniors";
+const canonicalUrl = "https://www.chicagoeuropeancaregivers.com/in-home-senior-care-services";
+---
+
+<PrimaryLayout metaTitle={metaTitle} metaDescription={metaDescription} metaKeywords={metaKeywords} canonicalUrl={canonicalUrl}>
+	<div class="container-fluid">
+    <div class="container p-0">
+      <section class="row align-items-center">
+        <div class="col-12 col-lg-8 offset-lg-2 py-5">
+          <h1 class="fw-bold ff-slab uppercase text-center text-primary m-0">
+            Personal &amp; Trusted<br />In-Home Care Service
+          </h1>
+        </div>
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <img
+            src="/images/friendly-home-care-09.jpg"
+            class="w-100 br-default img-p-cover"
+            alt="Happy elderly man giving thumbs up"
+          />
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container-fluid bg-white">
+    <div class="container py-5">
+      <section class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <p>
+            At Friendly Home Care, we prioritize your safety and comfort within the familiar surroundings of your own home. Our comprehensive range of in-home care services caters to seniors, individuals requiring Alzheimer's or dementia care, and those with disabilities. Our dedicated team of professional caregivers is committed to delivering compassionate and personalized assistance tailored to your specific needs.
+          </p>
+          <h2 class="fw-bold mt-5 mb-4 ff-slab uppercase text-tertiary">
+            Home Health Care Assistance Tailored to You
+          </h2>
+          <p>
+            Our in-home care services are crafted to empower seniors, ensuring they maintain their independence and enhance their quality of life. Our offerings include:
+          </p>
+          <ul>
+            <li>Daily Task Support</li>
+            <li>Bathing and Grooming Assistance</li>
+            <li>Meal Preparation</li>
+            <li>Medication Management</li>
+            <li>Mobility Assistance</li>
+            <li>Companionship</li>
+            <li>Emotional Well-being Support</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-10 offset-lg-1 pt-5">
+          <div class="row">
+            <div class="col-12 col-lg-6 pe-lg-4">
+                <img
+                    src="./images/friendly-home-care-03.jpg"
+                    class="w-100 mb-4 br-default"
+                    alt="Caregiver talking to elderly couple"
+                  />
+                <h3 class="h4 mb-3 ff-slab text-tertiary fw-bold">Collaborating with Care Facilities for Enhanced Support</h3>
+                <p class="mb-5">
+                  We extend our services to nursing homes, assisted living facilities, and rehabilitation centers to provide additional assistance to residents. With expertise in senior care and disabilities, we create personalized care plans aimed at fostering healing and comfort for each individual.
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 ps-lg-4">
+                <img
+                src="./images/friendly-home-care-04.jpg"
+                class="w-100 mb-4 br-default"
+                alt="Caregiver taking care of elderly women"
+              />
+                <h3 class="h4 mb-3 ff-slab text-tertiary fw-bold">Preserving Independence, Promoting Well-being</h3>
+                <p class="mb-5">
+                  At Friendly Home Care, we champion the idea that everyone deserves to live life fully. Our focus lies in long-term care and promoting healthy living among seniors. By working closely with each client, we develop care plans that encourage independence and uphold their lifestyle choices. Our caregivers are dedicated to maximizing comfort and facilitating the healing journey.
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container-fluid bg-blue text-light">
+    <div class="container py-6">
+      <section class="row">
+        <div class="col-12 col-lg-8 offset-lg-2 text-center">
+          <h2 class="h1 fw-bold mb-5 ff-slab uppercase text-white">
+            Take the First Step Towards Personalized Home Care
+          </h2>
+          <p>
+            Making the decision to opt for in-home care can be challenging. We offer a complimentary consultation to assist you in determining the suitability of our services for yourself or your loved one. Our team will collaborate with you to devise a personalized care plan that aligns with your unique requirements. Contact us today at 773-545-7776 in Chicago, IL, to schedule your consultation and embark on a path towards a happier, healthier lifestyle.
+          </p>
+          <p class="pt-4">
+            <a href="tel:7735457776" class="btn btn-light text-dark">
+              <i class="fas fa-phone me-1"></i> 773-545-7776
+            </a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <Footer />
+</PrimaryLayout>
