@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.chicagoeuropeancaregivers.com",
+  site: "https://friendlyhomecare.pages.dev/",
   base: "/",
   trailingSlash: "never",
   build: {
