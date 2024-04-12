@@ -109,7 +109,7 @@ a.no-underline:hover {
 }
 .img-p-cover {
   aspect-ratio: 1/1;
-  max-height: 400px;
+  max-height: 460px;
   object-fit: cover;
 }
 .card-link {

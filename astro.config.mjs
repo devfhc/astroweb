@@ -6,6 +6,11 @@ export default defineConfig({
   base: "/",
   trailingSlash: "never",
   build: {
-    inlineStylesheets: `always`,
+    inlineStylesheets: "always",
+  },
+  redirects: {
+    "/about-home-caregivers": "/about-us",
+    "/in-home-senior-care-services": "/in-home-care-services",
+    "/senior-companion-care": "/companion-care-services",
   },
 });

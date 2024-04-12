@@ -1,0 +1,72 @@
+---
+import PrimaryLayout from "../layouts/PrimaryLayout.astro";
+import GeneralInquiries from "../components/GeneralInquiries.astro";
+import Footer from "../components/Footer.astro";
+
+const metaTitle = "Elderly Companionship Service - Friendly Home Care";
+const metaDescription="We provide companion care to help lift spirits and make the elderly feel happier. Call us to request a consultation at 773-545-7776 in Chicago, IL.";
+const metaKeywords ="Senior companion care services, Elderly companion care, Senior home companion, Companion care for seniors, In-home senior companions, Companion caregivers for elderly, Senior companion assistance, Elderly companion services, Companion care for aging adults, Senior buddy services";
+const canonicalUrl = "https://www.chicagoeuropeancaregivers.com/senior-companion-care";
+---
+
+<PrimaryLayout metaTitle={metaTitle} metaDescription={metaDescription} metaKeywords={metaKeywords} canonicalUrl={canonicalUrl}>
+	<div class="container-fluid">
+    <div class="container p-0">
+      <section class="row align-items-center">
+        <div class="col-12 col-lg-8 offset-lg-2 py-5">
+          <h1 class="fw-bold ff-slab uppercase text-center text-primary m-0">
+            Senior Companion <br />Care Services
+          </h1>
+        </div>
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <img
+            src="/images/friendly-home-care-12.jpg"
+            class="w-100 br-default img-p-cover"
+            alt="Happy elderly man giving thumbs up"
+          />
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container-fluid bg-white">
+    <div class="container py-5">
+      <section class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <p>
+            Looking for reliable senior companion care services in Chicago, IL? Friendly Home Care offers compassionate companion caregivers to provide support and company for elderly individuals in the comfort of their own homes. Loneliness and isolation can deeply affect seniors, but with our in-home senior companions, your loved ones can enjoy meaningful interaction and assistance tailored to their needs.
+          </p>
+          <section>
+            <h2 class="fw-bold mt-5 mb-4 ff-slab uppercase text-tertiary">
+              Benefits of Elderly Companion Care
+            </h2>
+            <p>Companion care isn't just about assistance; it's about companionship and enhancing the quality of life for aging adults. Our trained caregivers prioritize the emotional well-being of seniors, offering a range of services from meal preparation to transportation. With confidentiality as a top priority, our companions ensure seniors feel comfortable and secure while receiving support with daily tasks.
+            </p>
+            <p>
+              For seniors living alone or with limited mobility, companion caregivers play a crucial role in fostering social connections and providing essential aid with activities like grooming and medication reminders. At Friendly Home Care, we understand the unique needs of each client and strive to deliver compassionate, reliable, and affordable care.
+            </p>            
+          </section>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container-fluid bg-blue text-light">
+    <div class="container py-6">
+      <section class="row">
+        <div class="col-12 col-lg-8 offset-lg-2 text-center">
+          <h2 class="h1 fw-bold mb-5 ff-slab uppercase text-white">
+            Schedule Your Free Consultation Today
+          </h2>
+          <p>
+            Ready to explore companion care for your loved one? Contact Friendly Home Care today for a free consultation. With over 33 years of experience, we're committed to crafting personalized care plans that prioritize your loved one's well-being. Call us at 773-545-7776 to learn more about our senior companion assistance services in Chicago, IL.
+          </p>
+          <p class="pt-4">
+            <a href="tel:7735457776" class="btn btn-light text-dark">
+              <i class="fas fa-phone me-1"></i> 773-545-7776
+            </a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <Footer />
+</PrimaryLayout>
