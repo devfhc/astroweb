@@ -4,7 +4,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://friendlyhomecare.pages.dev/",
   base: "/",
-  trailingSlash: "never",
+  trailingSlash: "always",
   build: {
     inlineStylesheets: "always",
   },
