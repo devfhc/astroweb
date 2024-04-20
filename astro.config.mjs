@@ -4,7 +4,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://friendlyhomecare.pages.dev/",
   base: "/",
-  trailingSlash: "always",
+  trailingSlash: "never",
   build: {
     inlineStylesheets: "always",
   },
@@ -12,5 +12,6 @@ export default defineConfig({
     "/about-home-caregivers": "/about-us",
     "/in-home-senior-care-services": "/in-home-care-services",
     "/senior-companion-care": "/companion-care-services",
+    "/senior-personal-care": "/personal-care-services",
   },
 });
