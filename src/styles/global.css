@@ -203,6 +203,28 @@ footer a:hover {
   color: #fff;
   text-decoration: none;
 }
+.quote-card {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  margin-bottom: 2rem;
+}
+.quote {
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+}
+.fa-quote-left {
+  position: absolute;
+  left: -3rem;
+  top: -0.6rem;
+}
+.fa-quote-right {
+  position: absolute;
+  right: -3rem;
+  top: -0.6rem;
+}
 
 @media screen and (min-width: 992px) {
   h1,

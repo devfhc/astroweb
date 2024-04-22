@@ -13,5 +13,7 @@ export default defineConfig({
     "/in-home-senior-care-services": "/in-home-care-services",
     "/senior-companion-care": "/companion-care-services",
     "/senior-personal-care": "/personal-care-services",
+    "/senior-live-in-overnight-care": "/live-in-and-overnight-care-services",
+    "/chicago-caregivers-reviews": "/testimonials",
   },
 });
