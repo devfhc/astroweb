@@ -111,6 +111,19 @@ a.no-underline:hover {
   aspect-ratio: 1/1;
   max-height: 460px;
   object-fit: cover;
+  width: 100%;
+}
+.card {
+  border-radius: 1.8rem;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  border-radius: 1rem;
 }
 .card-link {
   text-decoration: none;
@@ -134,7 +147,6 @@ a.no-underline:hover {
   transition: all 0.25s linear;
 }
 .card-link:hover img {
-  /* border-radius: 0; */
   filter: grayscale(0%);
 }
 .card-link h3 {
@@ -150,6 +162,13 @@ a.no-underline:hover {
 }
 .card-link:hover .hover-show {
   opacity: 1;
+}
+.card-article {
+  text-decoration: none;
+}
+.card-article .card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .logo {
   height: 5.2rem;
@@ -225,7 +244,13 @@ footer a:hover {
   right: -3rem;
   top: -0.6rem;
 }
-
+dt {
+  font-size: 1.3rem;
+}
+dd {
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 @media screen and (min-width: 992px) {
   h1,
   .h1 {

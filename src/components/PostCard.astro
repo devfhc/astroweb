@@ -1,0 +1,36 @@
+---
+import {Image, Picture} from "astro:assets";
+import { formatDate } from "../js/utils";
+const {frontmatter, url} = Astro.props;
+
+---
+
+<a href={url} class="card card-body p-3 p-md-4 card-article mb-4">
+  <!-- <Image src={import(frontmatter.image.src)} 
+          alt={frontmatter.image.alt}
+          quality={70}
+          width={382}
+          height={256}
+          format="webp"
+          style="width:100%;object-fit:cover;" />   -->
+  <Picture src={import(frontmatter.image.src)} 
+            formats={['avif', 'webp']} 
+            quality={70}
+            width={382}
+            height={256}
+            alt="A description of my image." />
+  <div class="d-flex justify-content-between align-items-center my-3">                   
+    <div>
+      <strong class="badge bg-blue">
+        {frontmatter.category}
+      </strong>
+    </div>
+    <div class="text-dark">
+      <i class="fas fa-calendar-day me-1"></i> {formatDate(frontmatter.date)}
+    </div>
+  </div>
+  <h3 class="card-title mb-1">{frontmatter.metaTitle}</h4>
+  <!-- <div class="text-dark">
+    <p>{frontmatter.blurb}</p>
+  </div> -->
+</a>

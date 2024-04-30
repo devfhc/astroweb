@@ -1,0 +1,95 @@
+---
+import PrimaryLayout from "../layouts/PrimaryLayout.astro";
+import BookConsultation from "../components/BookConsultation.astro";
+import Footer from "../components/Footer.astro";
+
+const metaTitle = "Contact - Friendly Home Care";
+const metaDescription="";
+const metaKeywords ="";
+const canonicalUrl = "https://www.chicagoeuropeancaregivers.com/contact-us";
+---
+
+<PrimaryLayout metaTitle={metaTitle} metaDescription={metaDescription} metaKeywords={metaKeywords} canonicalUrl={canonicalUrl}>
+	<div class="container-fluid bg-white">
+    <div class="container p-0">
+      <section class="row align-items-center pb-5">
+        <div class="col-12 col-lg-8 offset-lg-2 py-5">
+          <h1 class="fw-bold ff-slab uppercase text-center text-primary m-0">
+            Get in Touch with<br />Friendly Home Care
+          </h1>
+        </div>
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th valign="middle" class="py-3">Phone:</th>
+                <td class="py-3">773-545-7776</td>
+              </tr>
+              <tr>
+                <th valign="middle" class="py-3">Text:</th>
+                <td class="py-3">773-283-7637</td>
+              </tr>
+              <tr>
+                <th valign="middle" class="py-3">Fax:</th>
+                <td class="py-3">773-545-7806</td>
+              </tr>
+              <tr>
+                <th valign="middle" class="py-3">Email:</th>
+                <td class="text-break py-3"><a href="mailto:friendly@chicagoeuropeancaregivers.com">friendly@chicagoeuropeancaregivers.com</a></td>
+              </tr>
+              <tr>
+                <th valign="middle" class="py-3">Address:</th>
+                <td class="py-3">3427 N Milwaukee Ave Chicago, IL 60641<br />
+                  <a
+                  href="https://maps.app.goo.gl/86thMiRNfzgqRi8T8"
+                  title="View On Map"
+                  class="no-underline"
+                  rel="no-referrer"
+                  target="_blank">
+                    View in Google Maps
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th valign="middle" class="py-3">Business Hours:</th>
+                <td class="p-0">
+                  <table class="table m-0">
+                    <tbody>
+                      <tr>
+                        <td class="py-3">Monday - Friday</td>
+                        <td class="py-3">9:00 am - 5:00 pm</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3">Saturday</td>
+                        <td class="py-3">9:00 am - 12:00 pm</td>
+                      </tr>
+                      <tr class="border-0">
+                        <td class="border-0 py-3">Sunday</td>
+                        <td class="border-0 py-3">Closed</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <th valign="middle">We Accept:</th>
+                <td class="py-3">
+                  <div class="d-flex flex-wrap">
+                    <img style="width:60px; border:1px solid #ccc;" src="images/visa.png" alt="VISA" />
+                    <img style="width:60px; border:1px solid #ccc;" src="images/mastercard.png" alt="MasterCard" />
+                    <img style="width:60px; border:1px solid #ccc;" src="images/amex.png" alt="American Express" />
+                    <img style="width:60px; border:1px solid #ccc;" src="images/discover.png" alt="Discover" />
+                    <img style="width:60px;" src="images/cash.png" alt="Cash" />
+                    <img style="width:60px;" src="images/check.png" alt="Check" />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+  <BookConsultation />
+  <Footer />
+</PrimaryLayout>

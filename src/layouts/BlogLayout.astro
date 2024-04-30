@@ -1,0 +1,71 @@
+---
+import {Picture} from "astro:assets";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import PreHeader from "../components/PreHeader.astro";
+import Footer from "../components/Footer.astro";
+
+// const {metaTitle, metaDescription, metaKeywords, canonicalUrl, ldJson} = Astro.props;
+import {formatDate} from "../js/utils.js";
+const {frontmatter} = Astro.props;
+---
+
+<html lang="en">
+  <Head title={frontmatter.metaTitle} description={frontmatter.metaDescription} keywords={frontmatter.metaKeywords} canonicalURL={frontmatter.canonicalURL} />
+  <body>
+    <PreHeader />
+    <Header />
+    <div class="container-fluid bg-white">
+      <div class="container p-0">
+        <article class="row">
+          <div class="col-12 col-lg-8 offset-lg-2 py-5">
+            <div class="text-center mb-3 fw-bold text-secondary">{frontmatter.category}</div>
+            <h1 class="fw-bold ff-slab uppercase text-center text-primary m-0">
+              {frontmatter.metaTitle}
+            </h1>
+            <div class="d-flex justify-content-center align-items-center pt-4">
+              <div>
+                <i class="fas fa-calendar-day me-1"></i> {formatDate(frontmatter.date)}
+              </div>
+              <div class="px-3">&nbsp;</div>
+              <div>
+                <i class="fas fa-user me-1"></i> {frontmatter.author}
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8 offset-lg-2">
+            <!-- <Image class="card-image br-default img-p-cover" 
+                    src={import(frontmatter.image.src)} 
+                    alt={frontmatter.image.alt}
+                    format="webp"
+                    quality={70}
+                    width={872}
+                    height={460} /> -->
+            <Picture src={import(frontmatter.image.src)} 
+                     formats={['avif', 'webp']} 
+                     quality={70}
+                     width={872}
+                     alt="A description of my image."
+                     class="card-image br-default img-p-cover" />
+          </div>
+          <div class="col-12 col-lg-8 offset-lg-2 py-5">
+            <slot />
+          </div>
+        </article>
+      </div>
+    </div>
+    <Footer />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+---
+import PrimaryLayout from "../layouts/PrimaryLayout.astro";
+import Footer from "../components/Footer.astro";
+
+const metaTitle = "FAQs - Friendly Home Care";
+const metaDescription="";
+const metaKeywords ="";
+const canonicalUrl = "https://www.chicagoeuropeancaregivers.com/frequently-asked-questions";
+---
+
+<PrimaryLayout metaTitle={metaTitle} metaDescription={metaDescription} metaKeywords={metaKeywords} canonicalUrl={canonicalUrl}>
+	<div class="container-fluid bg-white">
+    <div class="container p-0">
+      <section class="row align-items-center pb-5">
+        <div class="col-12 col-lg-8 offset-lg-2 py-5">
+          <h1 class="fw-bold ff-slab uppercase text-center text-primary m-0">
+            Frequently Asked Questions
+          </h1>
+        </div>
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <dl class="faq-list">
+            <dt class="text-primary mb-2">What services do home care providers offer for elders with disabilities?</dt>
+            <dd class="mb-4">
+              Home care providers offer a wide range of services tailored to the individual needs of elders with disabilities. These may include assistance with activities of daily living (ADLs) such as bathing, dressing, grooming, medication management, mobility assistance, meal preparation, companionship, transportation, and more.
+              </dd> 
+            <dt class="text-primary mb-2">How do I find a reliable home care service provider for my elderly loved one with disabilities?</dt>
+            <dd class="mb-4">
+              You can start by researching reputable home care agencies in your area. Look for agencies with good reviews, certifications, and experience in providing care for elders with disabilities. It's also helpful to ask for recommendations from healthcare professionals, friends, or family members who have experience with home care services.
+            </dd>  
+            <dt class="text-primary mb-2">What qualifications should I look for in a home care provider for elders with disabilities?</dt>
+            <dd class="mb-4">
+              Look for caregivers who are trained, licensed, and experienced in providing care for elders with disabilities. They should have certifications in first aid, CPR, and specialized training in working with individuals with disabilities. Additionally, consider their communication skills, empathy, and reliability.
+            </dd>    
+        </dl>
+        </div>
+      </section>
+    </div>
+  </div>
+  <Footer />
+</PrimaryLayout>

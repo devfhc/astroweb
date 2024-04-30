@@ -1,0 +1,44 @@
+---
+import { formatBlogPosts } from "../../js/utils.js";
+import PrimaryLayout from "../../layouts/PrimaryLayout.astro";
+import Footer from "../../components/Footer.astro";
+import PostCard from "../../components/PostCard.astro";
+
+const allPosts = await Astro.glob("./*md");
+const formattedPosts = formatBlogPosts(allPosts);
+// const allCategories = [
+// 	...new Set(formattedPosts.map((post) => post.frontmatter.category).flat()),
+// ];
+// const postSections = allCategories.map((cat => {
+// 	return {
+// 		category: cat,
+// 		posts: formattedPosts.filter((post) => post.frontmatter.category === cat)
+// 	}
+// }))
+const metaTitle = "Blog Articles - Friendly Home Care";
+const metaDescription="";
+const metaKeywords ="";
+const canonicalUrl = "https://www.chicagoeuropeancaregivers.com/";
+---
+
+<PrimaryLayout metaTitle={metaTitle} metaDescription={metaDescription} metaKeywords={metaKeywords} canonicalUrl={canonicalUrl}>
+	<div class="container-fluid bg-white">
+    <div class="container p-0">
+      <section class="row pb-5">
+        <div class="col-12 col-lg-8 offset-lg-2 py-5">
+          <h1 class="fw-bold ff-slab uppercase text-center text-primary m-0">
+            Articles by Friendly Home Care
+          </h1>
+        </div>
+        {
+          formattedPosts.map((post) => 
+          <div class="col-12 col-md-6 col-xl-4">
+					  <PostCard frontmatter={post.frontmatter} url={post.url} />
+					</div>
+          )
+        }
+      </section>
+    </div>
+  </div>
+  <Footer />
+</PrimaryLayout>
