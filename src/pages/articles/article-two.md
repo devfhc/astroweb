@@ -6,11 +6,7 @@ metaKeywords: "meta keywords"
 blurb: "Nulla placerat aliquet justo, elementum hendrerit metus ultrices vehicula."
 canonicalUrl: "https://www.chicagoeuropeancaregivers.com/posts/article-two"
 date: 2024-4-27
-image:
-  {
-    src: "../pages/articles/images/friendly-home-care-16.jpg",
-    alt: "Image Two",
-  }
+image: { src: "../pages/images/friendly-home-care-16.jpg", alt: "Image Two" }
 author: "Elizabeth"
 category: "Category"
 draft: false

@@ -10,10 +10,10 @@ export default defineConfig({
   },
   redirects: {
     "/about-home-caregivers": "/about-us",
-    "/in-home-senior-care-services": "/in-home-care-services",
-    "/senior-companion-care": "/companion-care-services",
-    "/senior-personal-care": "/personal-care-services",
-    "/senior-live-in-overnight-care": "/live-in-and-overnight-care-services",
+    "/in-home-senior-care-services": "/services/in-home-care",
+    "/senior-companion-care": "/services/companion-care",
+    "/senior-personal-care": "/services/personal-care",
+    "/senior-live-in-overnight-care": "/services/live-in-and-overnight-care",
     "/chicago-caregivers-reviews": "/testimonials",
   },
 });

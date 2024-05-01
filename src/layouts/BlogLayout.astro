@@ -7,7 +7,7 @@ import Footer from "../components/Footer.astro";
 
 import {formatDate} from "../js/utils.js";
 const {frontmatter} = Astro.props;
-const images = import.meta.glob("../pages/articles/images/*");
+const images = import.meta.glob("../pages/images/*");
 ---
 
 <html lang="en">
@@ -45,7 +45,7 @@ const images = import.meta.glob("../pages/articles/images/*");
                      formats={['avif', 'webp']} 
                      quality={70}
                      width={872}
-                     alt="A description of my image."
+                     alt={frontmatter.image.src}
                      class="card-image br-default img-p-cover" />
           </div>
           <div class="col-12 col-lg-8 offset-lg-2 py-5">
