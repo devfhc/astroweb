@@ -1,7 +1,11 @@
-const navLinks = document.querySelectorAll("[data-navLink]");
+export function navigate() {
+  const navLinks = document.querySelectorAll("[data-navLink]");
 
-navLinks.forEach((link) => {
-  if (link.getAttribute("href") === window.location.pathname) {
-    link.setAttribute("aria-current", "page");
-  }
-});
+  navLinks.forEach((link) => {
+    console.log(link.getAttribute("href") + " = " + window.location.pathname);
+
+    if (link.getAttribute("href") === window.location.pathname) {
+      link.setAttribute("aria-current", "page");
+    }
+  });
+}

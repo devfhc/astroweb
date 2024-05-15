@@ -140,14 +140,10 @@ a.no-underline:hover {
   height: 340px;
   aspect-ratio: 16/9;
   object-fit: cover;
-  filter: grayscale(100%);
   border-top-left-radius: 1.8rem;
   border-top-right-radius: 1.8rem;
   border-bottom-right-radius: 1.8rem;
   transition: all 0.25s linear;
-}
-.card-link:hover img {
-  filter: grayscale(0%);
 }
 .card-link h3 {
   font-weight: bold;
