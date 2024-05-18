@@ -44,4 +44,13 @@ const {title, description, keywords, canonicalURL, ldJson='', image =''} = Astro
     crossorigin="anonymous"
   />
   <Fragment set:html={ldJson} />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0E4W771HT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q0E4W771HT');
+  </script>
 </head>
