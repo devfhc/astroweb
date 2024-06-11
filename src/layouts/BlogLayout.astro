@@ -10,8 +10,11 @@ const {frontmatter} = Astro.props;
 const images = import.meta.glob("../pages/images/*");
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-  <PageHead title={frontmatter.metaTitle} description={frontmatter.metaDescription} keywords={frontmatter.metaKeywords} canonicalURL={frontmatter.canonicalURL} />
+  <head>
+    <PageHead title={frontmatter.metaTitle} description={frontmatter.metaDescription} keywords={frontmatter.metaKeywords} canonicalURL={frontmatter.canonicalURL} />
+  </head>
   <body>
     <PreHeader />
     <Header />

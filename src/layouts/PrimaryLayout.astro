@@ -8,7 +8,9 @@ const {metaTitle, metaDescription, metaKeywords, canonicalUrl, ldJson} = Astro.p
 
 <!DOCTYPE html>
 <html lang="en">
-  <PageHead title={metaTitle} description={metaDescription} keywords={metaKeywords} canonicalURL={canonicalUrl} ldJson={ldJson} />
+  <head>
+    <PageHead title={metaTitle} description={metaDescription} keywords={metaKeywords} canonicalURL={canonicalUrl} ldJson={ldJson} />
+  </head>
   <body>
     <PreHeader />
     <Header />
