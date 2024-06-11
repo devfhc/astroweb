@@ -1,3 +1,3 @@
 export const config = {
-  blockSearchEngines: true,
+  blockSearchEngines: false,
 };

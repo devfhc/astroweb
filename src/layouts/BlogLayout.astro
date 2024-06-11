@@ -1,6 +1,6 @@
 ---
 import {Picture} from "astro:assets";
-import Head from "../components/Head.astro";
+import PageHead from "../components/PageHead.astro";
 import Header from "../components/Header.astro";
 import PreHeader from "../components/PreHeader.astro";
 import Footer from "../components/Footer.astro";
@@ -11,7 +11,7 @@ const images = import.meta.glob("../pages/images/*");
 ---
 
 <html lang="en">
-  <Head title={frontmatter.metaTitle} description={frontmatter.metaDescription} keywords={frontmatter.metaKeywords} canonicalURL={frontmatter.canonicalURL} />
+  <PageHead title={frontmatter.metaTitle} description={frontmatter.metaDescription} keywords={frontmatter.metaKeywords} canonicalURL={frontmatter.canonicalURL} />
   <body>
     <PreHeader />
     <Header />
