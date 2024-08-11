@@ -1,4 +1,5 @@
 ---
+import {Picture} from "astro:assets";
 import PrimaryLayout from "../layouts/PrimaryLayout.astro";
 import Banner from "../components/Banner.astro";
 import Footer from "../components/Footer.astro";
@@ -57,6 +58,12 @@ const ldJson =`
         ],
         "@id": "https://chicagoeuropeancaregivers.com"
       }</script>`;
+
+import image3 from "./images/friendly-home-care-03.jpg";
+import image22 from "./images/friendly-home-care-22.jpg";
+import image05 from "./images/friendly-home-care-05.jpg";
+import image06 from "./images/friendly-home-care-06.jpg";
+import image02 from "./images/friendly-home-care-02.jpg";
 ---
 
 <PrimaryLayout metaTitle={metaTitle} metaDescription={metaDescription} metaKeywords={metaKeywords} canonicalUrl={canonicalUrl} ldJson={ldJson}>
@@ -79,11 +86,19 @@ const ldJson =`
 						href="/services/in-home-care"
 					>
 						<div class="position-relative">
-							<img
+							<!-- <img
 								src="/images/friendly-home-care-03.jpg"
 								class="w-100 mb-4"
 								alt="Caregiver talking to elderly couple"
-							/>
+							/> -->
+							<Picture src={image3} 
+                      formats={['avif', 'webp']} 
+                      quality={70}
+                      width={512}
+                      height={288}
+                      alt="Caregiver talking to elderly couple" 
+											class="mb-4"
+                      style="width:100%; object-fit:cover;" />
 							<div
 								class="position-absolute top-50 start-50 translate-middle hover-show"
 							>
@@ -106,11 +121,19 @@ const ldJson =`
 						href="/services/companion-care"
 					>
 						<div class="position-relative">
-							<img
+							<!-- <img
 								src="/images/friendly-home-care-22.jpg"
 								class="w-100 mb-4"
 								alt="Caregiver taking care of elderly women"
-							/>
+							/> -->
+							<Picture src={image22} 
+                      formats={['avif', 'webp']} 
+                      quality={70}
+                      width={512}
+                      height={288}
+                      alt="Caregiver taking care of elderly women" 
+											class="mb-4"
+                      style="width:100%; object-fit:cover;" />
 							<div
 								class="position-absolute top-50 start-50 translate-middle hover-show"
 							>
@@ -133,11 +156,19 @@ const ldJson =`
 						href="/services/personal-care"
 					>
 						<div class="position-relative">
-							<img
+							<!-- <img
 								src="/images/friendly-home-care-05.jpg"
 								class="w-100 mb-4"
 								alt="Eldery women happy to see her caregiver"
-							/>
+							/> -->
+							<Picture src={image05} 
+                      formats={['avif', 'webp']} 
+                      quality={70}
+                      width={512}
+                      height={288}
+                      alt="Eldery women happy to see her caregiver" 
+											class="mb-4"
+                      style="width:100%; object-fit:cover;" />
 							<div
 								class="position-absolute top-50 start-50 translate-middle hover-show"
 							>
@@ -183,11 +214,19 @@ const ldJson =`
 			</section>
 			<section class="row align-items-center mb-5">
 				<div class="col-12 col-lg-6">
-					<img
+					<!-- <img
 						src="/images/friendly-home-care-06.jpg"
 						class="w-100 br-default mb-4 mb-lg-3 img-p-cover"
 						alt="Happy elderly man giving thumbs up"
-					/>
+					/> -->
+					<Picture src={image06} 
+									formats={['avif', 'webp']} 
+									quality={70}
+									width={800}
+									height={450}
+									alt="Happy elderly man giving thumbs up" 
+									class="br-default mb-4 mb-lg-3 img-p-cover"
+									style="width:100%; object-fit:cover;" />
 				</div>
 				<div class="col-12 col-lg-6">
 					<div class="ps-0 ps-lg-5">
@@ -209,11 +248,19 @@ const ldJson =`
 			</section>
 			<section class="row align-items-center">
 				<div class="col-12 col-lg-6">
-					<img
+					<!-- <img
 						src="/images/friendly-home-care-02.jpg"
 						class="w-100 br-default mb-4 mb-lg-3 img-p-cover"
 						alt="Caregiver holding patient's hands"
-					/>
+					/> -->
+					<Picture src={image02} 
+									formats={['avif', 'webp']} 
+									quality={70}
+									width={800}
+									height={450}
+									alt="Caregiver holding patient's hands" 
+									class="br-default mb-4 mb-lg-3 img-p-cover"
+									style="width:100%; object-fit:cover;" />
 				</div>
 				<div class="col-12 col-lg-6 order-lg-first">
 					<div class="pe-0 pe-lg-5">

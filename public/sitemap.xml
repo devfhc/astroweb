@@ -1,51 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/</loc>
+    <loc>https://chicagoeuropeancaregivers.com</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/about-us/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/about-us</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/services/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/services</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/services/in-home-care/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/services/in-home-care</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/services/companion-care/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/services/companion-care</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/services/personal-care/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/services/personal-care</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/services/live-in-and-overnight-care/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/services/live-in-and-overnight-care</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/testimonials/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/articles</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/frequently-asked-questions/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/articles/caring-for-dementia-patients-at-home</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/contact-us/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/testimonials</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/terms-of-use/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/frequently-asked-questions</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chicagoeuropeancaregivers.com/privacy-policy/</loc>
+    <loc>https://chicagoeuropeancaregivers.com/contact-us</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chicagoeuropeancaregivers.com/terms-of-use</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chicagoeuropeancaregivers.com/privacy-policy</loc>
     <priority>0.9</priority>
   </url>
 </urlset>
